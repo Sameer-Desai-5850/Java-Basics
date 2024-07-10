@@ -9,14 +9,18 @@ public class Num_is_PositivOrNegativ {
         if(Number>0){
             System.out.println("+ve number");
         }
-        if(Number<0){
+        else if(Number<0){
             System.out.println("-ve number");
         }
         else{
             System.out.println(" number is 0");
-
         }
 
+        //using ternary op
+        System.out.println(Number> 0 ? "+ve" : "-ve");
+        //Number>0 ? System.out.println("+ve") : System.out.println("-ve");
+        String result = Number > 0 ? "+ve" : "-ve";
+        System.out.println (result);
     }
     
 }
